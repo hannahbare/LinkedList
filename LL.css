@@ -12,6 +12,11 @@ body {
   font-weight: 800;
 }
 
+img {
+  height: 3em;
+  width: 3em;
+  }
+
 .wrapper {
   background-color: #455A64;
   color: #FFFFFF;

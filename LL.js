@@ -10,17 +10,15 @@ var bookmark = document.querySelector('.bookmark')
 var createBookmark = document.createElement('article')
 
 
-enterButton.addEventListener('click', displayTitle);
+enterButton.addEventListener('click', addBookmark);
 urlInput.addEventListener('keyup', URLpresent)
 readButton.addEventListener('click',readToggle)
 // deleteButton.addEventListener('click', deleteBookmark)
 
 function displayTitle() {
   console.log(titleInput);
-  document.section.appendChild(createBookmark)
   websiteTitle.innerText = titleInput.value;
   websiteLink.innerText = urlInput.value;
-
 }
 
 enterButtonEnable(true)
@@ -42,15 +40,28 @@ function deleteButton () {
   deleteButton.classList.remove('bookmark')
 }
 
+function addBookmark (){
+  console.log('agg');
+  var section = document.querySelector('.article-list');
+  var newElement = document.createElement('article');
+  // var node = document.createTextNode('This is new')
+  section.appendChild(newElement);}
+//   var titleInput = document.getElementById('title-input');
+//   var urlInput = document.getElementById('url-input');
+//   // websiteTitle.innerText = titleInput.value;
+//   editBookmark(titleInput, urlInput);
+// }
 
-
-//
-// function newBookmark(websiteName, URL) {
-//     this.websiteName = websiteName;
-//     this.URLName = URL;
+// function editBookmark(titleInput, urlInput) {
+//     this.websiteTitle = titleInput;
+//     this.websiteLink = urlInput;
 //     this.addBookmark = function(){
-//       console.log("working?");
+//       websiteTitle.innerText = this.websiteTitle;
+//       websiteLink.innerText = this.websiteLink;
 //     }
+//   }
+
+
 // }
 // var createBookmark = new newBookmark (Arguments)
 //(new-card)(appendChild), keep class 

@@ -1,0 +1,107 @@
+@import 'reset.css';
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+
+.wrapper {
+  background-color: #455A64;
+  color: #FFFFFF;
+  height: 50%;
+  width: 100%;
+  position: fixed;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.top-box {
+  display: block;
+  height: 10%; 
+  width: 90%;
+  padding: 0;
+  display: block;
+  margin: 15px auto;
+  /*  margin: 1em;*/
+}
+
+#enter-button {
+  background-color: #FFC107;
+  color: #FFFFFF;
+  border-radius: 0;
+}
+
+#enter-button:disabled {
+  background-color: #FFD773;
+}
+
+#enter-button:hover {
+  background-color: #FFD773;
+}
+
+.article-list {
+  background-color: #CFD8DC;
+  color: #455A64;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.bookmark {
+  background-color: #FFFFFF;
+  border: .1em solid #607D8B;
+  margin: 1em 1em;
+}
+
+#website-link {
+  color: #607D8B;
+  border-bottom: 1px solid #CFD8DC;
+  border-top: 1px solid #CFD8DC;
+  font-weight: 300;
+}
+
+#website-link:hover {
+  color: #455A64;
+  text-decoration: underline;
+  text-decoration-color: #FFC107;
+}
+
+.bottom-button {
+  background: white;
+  text-decoration: underline;
+  color:#455A64;
+  font-weight: 300;
+}
+
+.bottom-button:hover {
+  color: #455A64;
+  text-decoration-color: #FFC107;
+}
+
+.read-button-read {
+  color: #F05A28;
+  background-color: #F2F4F4
+  font-weight: 800;
+  text-decoration-color: #FFC107;
+}
+
+.read-button-bookmark {
+  background-color: '#F2F4F4'
+}
+
+#delete-button {
+  float: right;
+}
+
+

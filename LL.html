@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>Linked List</title>
+<title>Linked List</title>
  <link rel="stylesheet" type="text/css" href="LL.css">
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
 </head>
 <body>
- <section>
-   <h1>Linked List<img src="LinkedList/linked-list-logo.svg"></h1>
-   <input type="text" name="Website Title" placeholder="Website Title">
-   <input type="text" name="Website Title" placeholder="Website URL">
-   <button type="submit">Enter</button>
- </section>
- <section class="article-list">
-   <article>
-     <h2>Article Name</h2>
-     <p><a href="INSERT URL">URL</a></p>
-     <button>Read</button>
-     <button>Delete</button>
-   </article>
- </section>
+   <header class="wrapper">
+     <h1>Linked<img src="LinkedList/linked-list-logo.svg">List</h1>
+
+     <label for="title-input"><input id="title-input" class="top-box" type="text" name="Website Title" placeholder="Website Title"></label>
+
+     <label for="url-input"><input id="url-input" class="top-box" type="text" name="Website Title" placeholder="Website URL"></label>
+
+     <label for="enter-button"><input type="button" value="Enter" id="enter-button" class="top-box"></label>
+   </header>
+   <section class="article-list">
+     <article class="bookmark">
+       <h2 id='website-title'>The Website Title</h2>
+       <p id="website-link">www.thewebsiteurl.com</p>
+       <p class="read-delete-buttons">
+         <button id="read-button" class="bottom-button">Read</button>
+         <button id="delete-button" class="bottom-button">Delete</button>
+       </p>
+     </article>
+   </section>
 </body>
 <script type="text/javascript" src="LL.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="path/to/your/jquery.min.js"><\/script>')</script> -->
 </html>

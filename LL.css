@@ -1,3 +1,5 @@
+@import 'reset.css';
+
 *,
 *:after,
 *:before {
@@ -67,6 +69,7 @@ h1 {
   border-bottom: 1px solid #CFD8DC;
   border-top: 1px solid #CFD8DC;
   font-weight: 300;
+  padding: 2%;
 }
 
 #website-link:hover {
@@ -89,13 +92,13 @@ h1 {
 
 .read-button-read {
   color: #F05A28;
-  background-color: #F2F4F4
+  background-color: #F2F4F4;
   font-weight: 800;
   text-decoration-color: #FFC107;
 }
 
 .read-button-bookmark {
-  background-color: '#F2F4F4'
+  background-color: '#F2F4F4';
 }
 
 #delete-button {

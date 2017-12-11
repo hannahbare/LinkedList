@@ -7,7 +7,7 @@ var websiteLink = document.getElementById('website-link');
 var readButton = document.getElementById('read-button');
 var deleteButton = document.getElementById('delete-button');
 var bookmark = document.querySelector('.bookmark')
-
+var createBookmark = document.createElement('article')
 
 
 enterButton.addEventListener('click', displayTitle);
@@ -17,14 +17,17 @@ readButton.addEventListener('click',readToggle)
 
 function displayTitle() {
   console.log(titleInput);
+  document.section.appendChild(createBookmark)
   websiteTitle.innerText = titleInput.value;
   websiteLink.innerText = urlInput.value;
+
 }
 
 enterButtonEnable(true)
 
 function URLpresent (){
   enterButtonEnable(false)
+  // boolean, &&''
 }
 function enterButtonEnable (booleanvalue) {
   enterButton.disabled = booleanvalue;
@@ -40,15 +43,14 @@ function deleteButton () {
 }
 
 
-// Phase 2
-// 1. create error message if there is nothing in either the title or the URL field
-//  (Or statement?)
-// 2. Make responsive?!
 
-// Phase 3
-// 1. disable/enable "enter" button based on if there are contents in either field
-// 2. count total number of links
-// 3. count total number of read links
-// 4. count total number of unread links
-
-// RESEARCH -- addEvent Listener- continue adding the Website Title boxes when user adds another. Start out with 2 boxes?
+//
+// function newBookmark(websiteName, URL) {
+//     this.websiteName = websiteName;
+//     this.URLName = URL;
+//     this.addBookmark = function(){
+//       console.log("working?");
+//     }
+// }
+// var createBookmark = new newBookmark (Arguments)
+//(new-card)(appendChild), keep class 

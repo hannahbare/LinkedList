@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> removebutton
 var titleInput = document.getElementById('title-input');
 var urlInput = document.getElementById('url-input');
 var enterButton = document.getElementById('enter-button');
@@ -10,16 +6,10 @@ var websiteLink = document.getElementById('website-link');
 var readButton = document.getElementById('read-button');
 var deleteButton = document.getElementById('delete-button');
 var bookmark = document.querySelector('.bookmark')
-<<<<<<< HEAD
-
-
-enterButton.addEventListener('click', displayTitle);
-=======
 var createBookmark = document.createElement('article')
 
 
 enterButton.addEventListener('click', addBookmark);
->>>>>>> removebutton
 urlInput.addEventListener('keyup', URLpresent)
 readButton.addEventListener('click',readToggle)
 // deleteButton.addEventListener('click', deleteBookmark)
@@ -46,10 +36,6 @@ function readToggle (){
 }
 
 function deleteButton () {
-<<<<<<< HEAD
-  deleteButton.classList.remove('bookmark')
-}
-=======
   deleteButton.classList.remove('bookmark');
   removeChild
 }
@@ -71,5 +57,3 @@ function addBookmark (){
                 </p>`;
   newElement.setAttribute('class', 'bookmark')
 }
-
->>>>>>> removebutton

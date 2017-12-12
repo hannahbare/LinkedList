@@ -5,8 +5,7 @@ var websiteTitle = document.getElementById('website-title');
 var websiteLink = document.getElementById('website-link');
 var readButton = document.getElementById('read-button');
 var deleteButton = document.getElementById('delete-button');
-var bookmark = document.querySelector('.bookmark')
-var createBookmark = document.createElement('article')
+var bookmark = document.querySelector('.bookmark');
 var section = document.querySelector('.article-list');
 var article = document.querySelector('article');
 
@@ -39,8 +38,7 @@ function readToggle (){
 
 function deleteBookmark () {
   console.log('remove');
-  // deleteButton.classList.remove('bookmark');
-  section.removeChild(article)
+  section.removeChild(article);
 }
 
 function addBookmark (){

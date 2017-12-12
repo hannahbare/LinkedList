@@ -12,6 +12,11 @@ body {
   font-weight: 800;
 }
 
+img {
+  height: 3em;
+  width: 3em;
+  }
+
 .wrapper {
   background-color: #455A64;
   color: #FFFFFF;
@@ -89,6 +94,7 @@ h2 {
   border-bottom: 1px solid #CFD8DC;
   border-top: 1px solid #CFD8DC;
   font-weight: 300;
+  padding: 2%;
 }
 
 #website-link:hover {
@@ -113,7 +119,7 @@ h2 {
 
 .read-button-read {
   color: #F05A28;
-  background-color: #F2F4F4
+  background-color: #F2F4F4;
   font-weight: 800;
   text-decoration-color: #FFC107;
 }
@@ -125,5 +131,3 @@ h2 {
 #delete-button {
   float: right;
 }
-
-

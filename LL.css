@@ -12,14 +12,11 @@ body {
   font-weight: 800;
 }
 
-<<<<<<< HEAD
-=======
 img {
   height: 3em;
   width: 3em;
   }
 
->>>>>>> removebutton
 .wrapper {
   background-color: #455A64;
   color: #FFFFFF;
@@ -77,10 +74,7 @@ h1 {
   border-bottom: 1px solid #CFD8DC;
   border-top: 1px solid #CFD8DC;
   font-weight: 300;
-<<<<<<< HEAD
-=======
   padding: 2%;
->>>>>>> removebutton
 }
 
 #website-link:hover {
@@ -103,29 +97,15 @@ h1 {
 
 .read-button-read {
   color: #F05A28;
-<<<<<<< HEAD
-  background-color: #F2F4F4
-=======
   background-color: #F2F4F4;
->>>>>>> removebutton
   font-weight: 800;
   text-decoration-color: #FFC107;
 }
 
 .read-button-bookmark {
-<<<<<<< HEAD
-  background-color: '#F2F4F4'
-=======
   background-color: '#F2F4F4';
->>>>>>> removebutton
 }
 
 #delete-button {
   float: right;
-<<<<<<< HEAD
 }
-
-
-=======
-}
->>>>>>> removebutton

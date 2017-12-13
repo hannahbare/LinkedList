@@ -1,4 +1,4 @@
-/*@import 'reset.css';*/
+@import 'reset.css';
 
 *,
 *:after,
@@ -13,44 +13,47 @@ body {
 }
 
 img {
-  height: 3em;
-  width: 3em;
+  width: 2em;
+  display: inline-block
   }
 
 .wrapper {
   background-color: #455A64;
   color: #FFFFFF;
-  display: inline-block;
-  width: 49%;
+ /* display: inline-block;*/
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  top:0;
 }
 
 h1 {
   text-align: center;
-  font-size: 4.25em;
-  margin: .5em 0;
+  height: 20%;
+  font-size: 3em;
+  margin-top: 10%;
 }
 
 .top-box {
-  font-size: 4em;
-  font-weight: 400;
-  height: 1.75em; 
+/*  font-size: 4em;
+  font-weight: 400;*/
+  height: 10%; 
   width: 85%;
   padding: .25em;
   display: block;
   margin: .75em auto;
-  display: block;
 }
 
-input::placeholder{
+::placeholder{
   color: #808184;
 }
 
 #enter-button {
   background-color: #FFC107;
   color: #FFFFFF;
-  font-size: 3em;
+/*  font-size: 3em;*/
   font-weight: 800;
-  height: 2em;
+/*  height: 2em;*/
   border-radius: 0;
 }
 
@@ -65,8 +68,11 @@ input::placeholder{
 .article-list {
   background-color: #CFD8DC;
   color: #455A64;
-  display: inline-block;
-  width: 49%;
+/*  display: inline-block;*/
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom:0;
 }
 
 .bookmark {
@@ -76,8 +82,10 @@ input::placeholder{
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 2em;
+  padding: .2em;
 }
+
 #website-title {
   color: #455A64;
 }
@@ -103,12 +111,13 @@ h2 {
   color:#455A64;
   font-weight: 300;
   border-style: none;
+  margin: .5em
 }
 
 .bottom-button:hover {
-  color: #F05A28;
+  color: #455A64;
+  text-decoration: underline;
   text-decoration-color: #FFC107;
-  text-decoration: none;
 }
 
 .read-button-read {
@@ -118,29 +127,34 @@ h2 {
   text-decoration-color: #FFC107;
 }
 
-/*.read-button-bookmark {
-  background-color: '#F2F4F4'
-}*/
-
 .delete-button {
   float: right;
 }
 
 
 @media screen and (min-width: 900px) {
-  body {
+ /* body {
     background-color: magenta;
     display: block;
-  }
+  }*/
   .wrapper {
     height: 100%;
     width: 50%;
-    float: left;
+   /* float: left;*/
+    position: absolute;
+    left:0;
+  }
+
+  h1 {
+    margin-top: 25%;
+    height: 10%;
   }
   .article-list {
     height: 100%;
     width: 50%;
-    float: right;
+    /*float: right;*/
+    position: absolute;
+    right:0;
   }
 }
 

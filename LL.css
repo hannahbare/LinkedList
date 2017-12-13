@@ -68,6 +68,7 @@ h1 {
   height: 50%;
   position: absolute;
   bottom:0;
+  overflow: scroll;
 }
 
 .bookmark {
@@ -166,10 +167,3 @@ h2 {
   }
 
 }
-
-
-
-
-
-
-

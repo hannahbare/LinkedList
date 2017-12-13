@@ -14,17 +14,14 @@ urlInput.addEventListener('keyup', URLpresent)
 
 section.addEventListener('click', function(event){
  if (event.target.className.includes('read-button')) {
-  console.log(event.target);
   var readButton = event.target;
   readButton.classList.toggle('read-button-read');
+  readButton.parentNode.parentNode.classList.toggle('read-button-bookmark')
   }
 })
 
 section.addEventListener('click', function(event){
-  console.log(event);
-  console.log(event.target.className);
  if (event.target.className.includes('delete-button')) {
-  console.log(event.target.parentNode.parentNode);
   section.removeChild(event.target.parentNode.parentNode);
   }
 })

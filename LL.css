@@ -14,7 +14,8 @@ body {
 
 img {
   width: 2em;
-  display: inline-block
+  display: inline-block;
+  height: .75em;
   }
 
 .wrapper {
@@ -46,7 +47,7 @@ h1 {
   color: #808184;
 }
 
-.bookmarkCount {
+.counts {
   text-align: center;
 }
 
@@ -157,7 +158,9 @@ h2 {
   }
 
   .top-box {
-    font-size: 2em;
+    font-size: 1em;
+    height: 7%;
+    margin: 1.75em auto;
   }
 
   .article-list {

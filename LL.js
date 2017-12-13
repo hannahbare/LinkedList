@@ -9,6 +9,7 @@ var section = document.querySelector('.article-list');
 var article = document.querySelector('.bookmark');
 var form = document.querySelector('.wrapper');
 var bookmarkCount = document.querySelector('.bookmarkCount');
+var readCount = document.querySelector('.readCount');
 
 enterButton.addEventListener('click', addBookmark);
 urlInput.addEventListener('keyup', URLpresent)
@@ -17,7 +18,8 @@ section.addEventListener('click', function(event){
  if (event.target.className.includes('read-button')) {
   var readButton = event.target;
   readButton.classList.toggle('read-button-read');
-  readButton.parentNode.parentNode.classList.toggle('read-button-bookmark')
+  readButton.parentNode.parentNode.classList.toggle('read-button-bookmark');
+  countReadBookmarks()
   }
 })
 
@@ -26,7 +28,7 @@ section.addEventListener('click', function(event){
   section.removeChild(event.target.parentNode.parentNode);
   var bookmarkList = document.querySelectorAll('.bookmark');
   console.log(bookmarkList.length)
-  bookmarkCount.innerText = 'Number of bookmarks: ' + bookmarkList.length;
+  bookmarkCount.innerText = 'Number of Bookmarks: ' + bookmarkList.length;
   }
 })
 
@@ -59,6 +61,11 @@ function addBookmark (){
 function countBookmarks(){
   var bookmarkList = document.querySelectorAll('.bookmark');
   console.log(bookmarkList.length)
-  bookmarkCount.innerText = 'Number of bookmarks: ' + bookmarkList.length;
+  bookmarkCount.innerText = 'Number of Bookmarks: ' + bookmarkList.length;
 }
 
+function countReadBookmarks(){
+    var readList = document.querySelectorAll('.read-button-read');
+    console.log(readList.length);
+    readCount.innerText = 'Number of Bookmarks Read: ' + readList.length;
+  }

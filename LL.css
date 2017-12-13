@@ -75,7 +75,8 @@ h1 {
   background-color: #FFFFFF;
   border: .1em solid #607D8B;
   margin: 1em 1em;
-  height: 43%
+  height: 43%;
+  min-height: 140px;
 }
 
 h2 {
@@ -126,6 +127,7 @@ h2 {
   background-color: #F2F4F4;
   font-weight: 800;
   text-decoration-color: #FFC107;
+  text-decoration: none;
 }
 
 .read-button-bookmark {
@@ -135,7 +137,6 @@ h2 {
 .delete-button {
   float: right;
 }
-
 
 @media screen and (min-width: 900px) {
 
@@ -164,6 +165,7 @@ h2 {
 
   .bookmark {
   height: 22%;
+  min-height: 128px;
   }
 
 }

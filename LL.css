@@ -46,6 +46,10 @@ h1 {
   color: #808184;
 }
 
+.bookmarkCount {
+  text-align: center;
+}
+
 #enter-button {
   background-color: #FFC107;
   color: #FFFFFF;
@@ -138,7 +142,7 @@ h2 {
   float: right;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 735px) {
 
   .wrapper {
     height: 100%;

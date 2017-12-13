@@ -5,9 +5,10 @@ var websiteTitle = document.getElementById('website-title');
 var websiteLink = document.getElementById('website-link');
 var readButton = document.getElementById('read-button');
 var deleteButton = document.getElementById('delete-button');
-var bookmark = document.querySelector('.bookmark');
 var section = document.querySelector('.article-list');
 var article = document.querySelector('.bookmark');
+var form = document.querySelector('.wrapper');
+var bookmarkCount = document.querySelector('.bookmarkCount');
 
 enterButton.addEventListener('click', addBookmark);
 urlInput.addEventListener('keyup', URLpresent)
@@ -23,6 +24,9 @@ section.addEventListener('click', function(event){
 section.addEventListener('click', function(event){
  if (event.target.className.includes('delete-button')) {
   section.removeChild(event.target.parentNode.parentNode);
+  var bookmarkList = document.querySelectorAll('.bookmark');
+  console.log(bookmarkList.length)
+  bookmarkCount.innerText = 'Number of bookmarks: ' + bookmarkList.length;
   }
 })
 
@@ -48,6 +52,13 @@ function addBookmark (){
                   <button class="bottom-button delete-button">Delete</button>
                 </p>`;
   newElement.setAttribute('class', 'bookmark');
+  countBookmarks();
+  form.reset();
 }
 
+function countBookmarks(){
+  var bookmarkList = document.querySelectorAll('.bookmark');
+  console.log(bookmarkList.length)
+  bookmarkCount.innerText = 'Number of bookmarks: ' + bookmarkList.length;
+}
 

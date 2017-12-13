@@ -11,8 +11,37 @@ var form = document.querySelector('.wrapper');
 var bookmarkCount = document.querySelector('.bookmarkCount');
 var readCount = document.querySelector('.readCount');
 
-enterButton.addEventListener('click', addBookmark);
-urlInput.addEventListener('keyup', URLpresent)
+
+
+enterButton.addEventListener('click', errorMessage);
+  function errorMessage() {
+  var titleValue = titleInput.value;
+  var urlValue = urlInput.value;
+  if (urlValue == '' || titleValue == '') {
+    console.log('did this work?');
+    alert('Error, please add a title and a url for your website.');
+    console.log('Hannah');
+ } else {addBookmark()}
+};
+
+
+titleInput.addEventListener('keyup', titlePresent);
+// enterButton.addEventListener('click', addBookmark);
+urlInput.addEventListener('keyup', URLpresent);
+
+enterButtonDisabled(true)
+
+function URLpresent (){
+  enterButtonDisabled(false);
+  // boolean, &&''
+}
+function titlePresent () {
+  enterButtonDisabled(false);
+}
+
+function enterButtonDisabled (booleanvalue) {
+  enterButton.disabled = booleanvalue;
+} 
 
 section.addEventListener('click', function(event){
  if (event.target.className.includes('read-button')) {
@@ -30,18 +59,7 @@ section.addEventListener('click', function(event){
   console.log(bookmarkList.length)
   bookmarkCount.innerText = 'Number of Bookmarks: ' + bookmarkList.length;
   }
-})
-
-enterButtonEnable(true)
-
-function URLpresent (){
-  enterButtonEnable(false)
-  // boolean, &&''
-}
-
-function enterButtonEnable (booleanvalue) {
-  enterButton.disabled = booleanvalue;
-}  
+}) 
 
 function addBookmark (){
   var newElement = document.createElement('article');

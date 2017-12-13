@@ -7,19 +7,27 @@ var readButton = document.getElementById('read-button');
 var deleteButton = document.getElementById('delete-button');
 var bookmark = document.querySelector('.bookmark');
 var section = document.querySelector('.article-list');
-var article = document.querySelector('article');
-
+var article = document.querySelector('.bookmark');
 
 enterButton.addEventListener('click', addBookmark);
 urlInput.addEventListener('keyup', URLpresent)
-readButton.addEventListener('click',readToggle)
-deleteButton.addEventListener('click', deleteBookmark)
 
-function displayTitle() {
-  console.log(titleInput);
-  websiteTitle.innerText = titleInput.value;
-  websiteLink.innerText = urlInput.value;
-}
+section.addEventListener('click', function(event){
+ if (event.target.className.includes('read-button')) {
+  console.log(event.target);
+  var readButton = event.target;
+  readButton.classList.toggle('read-button-read');
+  }
+})
+
+section.addEventListener('click', function(event){
+  console.log(event);
+  console.log(event.target.className);
+ if (event.target.className.includes('delete-button')) {
+  console.log(event.target.parentNode.parentNode);
+  section.removeChild(event.target.parentNode.parentNode);
+  }
+})
 
 enterButtonEnable(true)
 
@@ -27,32 +35,22 @@ function URLpresent (){
   enterButtonEnable(false)
   // boolean, &&''
 }
+
 function enterButtonEnable (booleanvalue) {
   enterButton.disabled = booleanvalue;
-}
-
-function readToggle (){
-  readButton.classList.toggle('read-button-read');
-  bookmark.classList.toggle('read-button-bookmark');
-}
-
-function deleteBookmark () {
-  console.log('remove');
-  section.removeChild(article);
-}
+}  
 
 function addBookmark (){
-  console.log('agg');
   var newElement = document.createElement('article');
   section.appendChild(newElement);
-  console.log(newElement);
-  console.log(section);
   newElement.innerHTML = 
         `<h2 id='website-title'> ${titleInput.value} </h2>
-                <p id="website-link"><a href="http://${urlInput.value}"> ${urlInput.value} </p>
+                <p id="website-link"><a href="http://${urlInput.value}"> ${urlInput.value} </a></p>
                 <p class="read-delete-buttons">
-                  <button id="read-button" class="bottom-button">Read</button>
-                  <button id="delete-button" class="bottom-button">Delete</button>
+                  <button class="bottom-button read-button">Read</button>
+                  <button class="bottom-button delete-button">Delete</button>
                 </p>`;
   newElement.setAttribute('class', 'bookmark');
 }
+
+

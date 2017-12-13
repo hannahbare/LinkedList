@@ -16,6 +16,7 @@ section.addEventListener('click', function(event){
  if (event.target.className.includes('read-button')) {
   var readButton = event.target;
   readButton.classList.toggle('read-button-read');
+  readButton.parentNode.parentNode.classList.toggle('read-button-bookmark')
   }
 })
 

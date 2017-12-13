@@ -20,7 +20,6 @@ img {
 .wrapper {
   background-color: #455A64;
   color: #FFFFFF;
- /* display: inline-block;*/
   height: 50%;
   width: 100%;
   position: absolute;
@@ -35,13 +34,12 @@ h1 {
 }
 
 .top-box {
-/*  font-size: 4em;
-  font-weight: 400;*/
   height: 10%; 
   width: 85%;
   padding: .25em;
   display: block;
   margin: .75em auto;
+  font-size: 1em;
 }
 
 ::placeholder{
@@ -51,9 +49,7 @@ h1 {
 #enter-button {
   background-color: #FFC107;
   color: #FFFFFF;
-/*  font-size: 3em;*/
   font-weight: 800;
-/*  height: 2em;*/
   border-radius: 0;
 }
 
@@ -68,7 +64,6 @@ h1 {
 .article-list {
   background-color: #CFD8DC;
   color: #455A64;
-/*  display: inline-block;*/
   width: 100%;
   height: 50%;
   position: absolute;
@@ -79,11 +74,12 @@ h1 {
   background-color: #FFFFFF;
   border: .1em solid #607D8B;
   margin: 1em 1em;
+  height: 43%
 }
 
 h2 {
   font-size: 2em;
-  padding: .2em;
+  padding: .3em;
 }
 
 #website-title {
@@ -95,21 +91,24 @@ h2 {
   text-decoration: underline #F2F4F4;
   border-bottom: 1px solid #CFD8DC;
   border-top: 1px solid #CFD8DC;
-  font-weight: 300;
+  font-weight: 400;
   padding: 2%;
+  font-size: 1.2em;
 }
 
 #website-link:hover {
   color: #455A64;
   text-decoration: underline;
   text-decoration-color: #FFC107;
+  font-weight: 800;
 }
 
 .bottom-button {
   background: white;
   text-decoration: underline;
   color:#455A64;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 1em;
   border-style: none;
   margin: .5em
 }
@@ -118,6 +117,7 @@ h2 {
   color: #455A64;
   text-decoration: underline;
   text-decoration-color: #FFC107;
+  font-weight: 800;
 }
 
 .read-button-read {
@@ -127,20 +127,20 @@ h2 {
   text-decoration-color: #FFC107;
 }
 
+.read-button-bookmark {
+  background-color: #F2F4F4;
+}
+
 .delete-button {
   float: right;
 }
 
 
 @media screen and (min-width: 900px) {
- /* body {
-    background-color: magenta;
-    display: block;
-  }*/
+
   .wrapper {
     height: 100%;
     width: 50%;
-   /* float: left;*/
     position: absolute;
     left:0;
   }
@@ -149,13 +149,22 @@ h2 {
     margin-top: 25%;
     height: 10%;
   }
+
+  .top-box {
+    font-size: 2em;
+  }
+
   .article-list {
     height: 100%;
     width: 50%;
-    /*float: right;*/
     position: absolute;
     right:0;
   }
+
+  .bookmark {
+  height: 22%;
+  }
+
 }
 
 

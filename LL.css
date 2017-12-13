@@ -14,7 +14,8 @@ body {
 
 img {
   width: 2em;
-  display: inline-block
+  display: inline-block;
+  height: .75em;
   }
 
 .wrapper {
@@ -44,6 +45,10 @@ h1 {
 
 ::placeholder{
   color: #808184;
+}
+
+.counts {
+  text-align: center;
 }
 
 #enter-button {
@@ -138,7 +143,7 @@ h2 {
   float: right;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 735px) {
 
   .wrapper {
     height: 100%;
@@ -153,7 +158,9 @@ h2 {
   }
 
   .top-box {
-    font-size: 2em;
+    font-size: 1em;
+    height: 7%;
+    margin: 1.75em auto;
   }
 
   .article-list {

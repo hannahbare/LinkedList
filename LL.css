@@ -13,38 +13,40 @@ body {
 }
 
 img {
-  width: 2em;
   display: inline-block;
   height: .75em;
-  }
+  width: 2em;
+}
 
 .wrapper {
   background-color: #455A64;
   color: #FFFFFF;
   height: 50%;
-  width: 100%;
   position: absolute;
   top:0;
+  width: 100%;
 }
 
 h1 {
-  text-align: center;
-  height: 20%;
   font-size: 3em;
+  height: 20%;
   margin-top: 10%;
+  text-align: center;
 }
 
 .top-box {
-  height: 10%; 
-  width: 85%;
-  padding: .25em;
   display: block;
+  font-size: .9em;
+  height: 10%; 
   margin: .75em auto;
-  font-size: 1em;
+  padding: .25em;
+  padding-top: .9em;
+  width: 85%;
 }
 
 ::placeholder{
-  color: #808184;
+  color: #B3B5B7;
+  font-size: 1.5em;
 }
 
 .counts {
@@ -53,9 +55,10 @@ h1 {
 
 #enter-button {
   background-color: #FFC107;
+  border-radius: 0;
   color: #FFFFFF;
   font-weight: 800;
-  border-radius: 0;
+  padding-top: .2em;
 }
 
 #enter-button:disabled {
@@ -68,12 +71,12 @@ h1 {
 
 .article-list {
   background-color: #CFD8DC;
-  color: #455A64;
-  width: 100%;
-  height: 50%;
-  position: absolute;
   bottom:0;
+  color: #455A64;
+  height: 50%;
   overflow: scroll;
+  position: absolute;
+  width: 100%;
 }
 
 .bookmark {
@@ -94,13 +97,23 @@ h2 {
 }
 
 #website-link {
-  color: #607D8B;
-  text-decoration: underline #F2F4F4;
   border-bottom: 1px solid #CFD8DC;
   border-top: 1px solid #CFD8DC;
+  font-size: 1.2em;
   font-weight: 400;
   padding: 2%;
-  font-size: 1.2em;
+}
+
+a {
+  color: #607D8B;
+  text-decoration: underline; 
+  text-decoration-color: #F2F4F4;
+}
+
+a:hover {
+  color: #607D8B;
+  text-decoration: underline; 
+  text-decoration-color: #FFC107;
 }
 
 #website-link:hover {
@@ -112,24 +125,25 @@ h2 {
 
 .bottom-button {
   background: white;
-  text-decoration: underline;
+  border-style: none;
   color:#455A64;
   font-weight: 400;
   font-size: 1em;
-  border-style: none;
-  margin: .5em
+  margin: .5em;
+  padding-top: .4em;
+  text-decoration: underline;
 }
 
 .bottom-button:hover {
   color: #455A64;
+  font-weight: 800;
   text-decoration: underline;
   text-decoration-color: #FFC107;
-  font-weight: 800;
 }
 
 .read-button-read {
-  color: #F05A28;
   background-color: #F2F4F4;
+  color: #F05A28;
   font-weight: 800;
   text-decoration-color: #FFC107;
   text-decoration: none;
@@ -139,40 +153,48 @@ h2 {
   background-color: #F2F4F4;
 }
 
+.delete-button-read {
+  background-color: #F2F4F4;
+}
+
 .delete-button {
   float: right;
 }
 
 @media screen and (min-width: 735px) {
 
-  .wrapper {
-    height: 100%;
-    width: 50%;
-    position: absolute;
-    left:0;
-  }
+.wrapper {
+  height: 100%;
+  left:0;
+  position: absolute;
+  width: 50%;
+}
 
-  h1 {
-    margin-top: 25%;
-    height: 10%;
-  }
+h1 {
+  height: 10%;
+  margin-top: 25%;
+}
 
-  .top-box {
-    font-size: 1em;
-    height: 7%;
-    margin: 1.75em auto;
-  }
+h2 {
+  padding: .4em;
+}
 
-  .article-list {
-    height: 100%;
-    width: 50%;
-    position: absolute;
-    right:0;
-  }
+.top-box {
+  font-size: 1em;
+  height: 7%;
+  margin: 1.75em auto;
+}
 
-  .bookmark {
+.article-list {
+  height: 100%;
+  position: absolute;
+  right:0;
+  width: 50%;
+}
+
+.bookmark {
   height: 22%;
   min-height: 128px;
-  }
+}
 
 }

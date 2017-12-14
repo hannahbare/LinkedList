@@ -6,13 +6,15 @@ Linked List is a project that focuses on creating a program that allows users to
 
 Project: Linked List
 <hr />
->Group Member Names: Maddy Dannenberg, Hannah Bare 
->Project Expectations: What does each group member hope to get out of this project?
+Group Member Names: Maddy Dannenberg, Hannah Bare 
+
+Project Expectations: What does each group member hope to get out of this project?
     Feel more comfortable with Javascript/html/css
     Learn and apply jQuery
     Learn how to make responsive mobile app
     Understand the logic behind each step
     Focus on details in CSS
+    
 Goals and expectations:
     Goal: Complete Phase Three, have neat and clear code
     Expectations: Both group members share workload so we don’t “steal the learning”
